@@ -34,4 +34,80 @@ while(val!==-1)
 }
 console.log(count);
 console.log(val);
+///////////////////////////////////////////////////
+//string reversal
+let original = "welcome";
+let reverse = original.split('').reverse().join('');
+console.log(reverse);
+//Palindrome
+let inp = "123321";
+let rev = inp.split('').reverse().join('');
+if(inp===rev)
+{
+    console.log("Palindrome");
+}
+else
+{
+    console.log("Not Palindrome");
+}
+//or
+function isPalindrome(str) {
+    let reversed = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversed += str[i];
+    }
+
+    return str === reversed;
+}
+
+console.log(isPalindrome("level"));
+console.log(isPalindrome("hello"));
+
+//Anagram
+let input11 = "silent";
+let check = "listens";
+let ippsplt = input11.split('').sort().join('');
+let checksplt = check.split('').sort().join('');
+if(ippsplt===checksplt)
+{
+    console.log("Anagram");
+}
+else
+{
+    console.log("Not Anagram");
+}
+// Duplicate characters
+let inpstring ="prsssabbrhii";
+let sptstrng  = inpstring.split('');
+let counts = inpstring.length;
+console.log(counts);
+for(let i = 0;i<=counts;i++)
+{
+    let ct = 1;
+     for (let j = i + 1; j < counts; j++) 
+     {
+        if(sptstrng[i]==sptstrng[j])
+        {   
+            ct++;
+        }
+     }
+    if (ct > 1 && sptstrng.indexOf(sptstrng[i]) === i)
+    {
+            console.log(sptstrng[i], "->", ct);
+    }
+}
+// Duplicate array
+let arr = [1, 2, 3, 2, 4, 5, 5, 6, 3];
+for(let i = 0;i<=arr.length;i++){
+    let countss = 1;
+    for(let j = i+1;j<=arr.length;j++){
+        if(arr[i]==arr[j]){
+            countss++;
+        }
+    }
+    if(countss > 1 && arr.indexOf(arr[i]) === i){
+        console.log(arr[i], "->", countss);
+    }
+}
 

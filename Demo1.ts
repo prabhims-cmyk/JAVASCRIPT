@@ -27,3 +27,4 @@ console.log(user);
 //console.log(user);
 /////////////////////////////////
 //Git- window based and Github - cloud based site to store data
+// run ts code- tsc Demo1.ts    node Demo1.ts 

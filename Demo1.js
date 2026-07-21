@@ -19,10 +19,7 @@ function add(a, b) {
 console.log(add(3, 4));
 let user = { name: "Bob", age: 30 }; //object
 console.log(user);
-user: {
-    location: string;
-}
-{
-    location = "USA";
-}
-console.log(user);
+//user:{location:string}={location="USA"} // external property assignation is not possible in ts
+//console.log(user);
+/////////////////////////////////
+//Git- window based and Github - cloud based site to store data
